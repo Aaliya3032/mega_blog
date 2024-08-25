@@ -10,6 +10,8 @@ const Home = () => {
     appwriteService.getPosts([]).then((posts)=>{
       if(posts){
         setPosts(posts.documents)
+        console.log("Home Posts",posts.documents);
+        
       }  
     })
      },[])
